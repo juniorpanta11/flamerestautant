@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+
+header.abajo {
+    background: #a09377;
+    padding: 15px 20px;
+}
+
+header .logo {
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    font-family: Helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header.abajo .logo {
+    color: rgb(37, 36, 36);
+}
+
+header.abajo ul li a {
+    color: rgb(37, 36, 36);
+}
+
+.zona1 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    place-items: center;
+    background: url('iamgenes/cabeceras-contacto.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.zona1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .55);
+
+}
+
+h1 {
+    color: antiquewhite;
+    position: relative;
+    font-size: 50px;
+}
+
+.contacto {
+    padding: 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.footer {
+    background-color: #a09377;
+    text-align: center;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.barras {
+    font-size: 30px;
+    float: right;
+    text-decoration: none;
+    line-height: 30px;
+    margin-right: 15;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.barras.abajo {
+    font-size: 30px;
+    float: right;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+
+.toggle-menu {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 40px;
+    z-index: 1;
+    display: none;
+    transition: 1.5s;
+}
+
+img {
+    max-width: 100%;
+}
+
+.zona1 {
+    flex-direction: column;
+}
+
+.zona2 {
+    flex-direction: column;
+    text-align: center;
+}
+
+section {
+    flex-direction: column;
+}
+
+.imageninvert {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.imageninvert {
+    display: block;
+}
+
+.imagennormal {
+    display: none;
+}
+
+.TEXTO1 {
+    font-size: 25px;
+    font-family: 'Pridi', serif;
+}
+
+.TEXTO2 {
+    font-size: 22px;
+
+}
+
+
+.buttons {
+    background: #a09377;
+    min-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-image: a09377;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+
+@media all and (max-width:800px) {
+
+    header {
+        position: fixed;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        margin-right: 80px;
+    }
+
+    header ul {
+        flex-direction: column;
+        float: right;
+    }
+
+    header.abajo .toggle-menu {
+        filter: invert(0);
+        transition: 1.5s;
+    }
+
+    .buttons a {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f6c5b7;
+        top: 70px;
+        left: -110%;
+        transition: all 0.5s;
+        text-align: center;
+        color: #000000;
+
+    }
+
+    header ul li {
+        display: block;
+        margin: 32px 0;
+        line-height: 30px;
+    }
+
+    header ul li a {
+        color: #000000;
+    }
+
+    nav {
+        flex-direction: column;
+        float: right;
+    }
+
+    #check {
+        flex-direction: row;
+        background-color: #f6c5b7;
+        display: none;
+    }
+
+    .barras:checked+.menu {
+        left: 0;
+    }
+
+    .toggle-menu {
+
+        display: block;
+    }
+
+    i {
+        display: none;
+    }
+}

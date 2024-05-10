@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/144703dbfc.js" crossorigin="anonymous"></script>
+  <title>Carrito de compras</title>
+</head>
+
+<body>
+  <header>
+    <a href="dominio.html" class="logo">FLAME</a>
+    <nav class="botonsiño">
+      <div id="toggle-menu" class="toggle-menu">
+        <label for="check"><i class="fa-light fa-bars"></i>
+          <img src="iamgenes/barras.png" alt="">
+        </label>
+
+      </div>
+      <input type="checkbox" class="barras" id="check" />
+
+      <ul id="menu" class="menu">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="evento.html">Eventos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="Reservas.html">Reservas</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+      </ul>
+
+  </header>
+  <section class="zona1">
+    <h1>PEDIDOS</h1>
+  </section>
+
+  <div class="contenedor">
+    <nav id="carrito">
+      <i class="fa-solid fa-cart-shopping">
+        <div class="Car1">
+          <ul class="car2">
+            <li>Imagen</li>
+            <li>Nombre</li>
+            <li>Precio</li>
+            <li>Cantidad</li>
+            <li></li>
+          </ul>
+          <div class="lista_de_Platos">
+          </div>
+          <button id="vaciarCarrito">VACIAR CARRITO</button>
+        </div>
+      </i>
+    </nav>
+
+    <div>
+      <h2>ENTRADAS</h2>
+    </div>
+
+    <div class="contenedor-items" id="listaPlatosEntradas">
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/domplings.jpeg" alt="">
+        <div class="info">
+          <h3>DOMPLINGS DE GALLINAS</h3>
+          <p>
+            Cremita trufada de Caldo de Gallina
+          </p>
+          <br>
+          <div class="precio">
+            <p>$30</p>
+          </div>
+          <button class="agregarPlato" data-id="1">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/ensalada.jpeg" alt="">
+        <div class="info">
+          <h3>ENSALADA DE TALLOS DE ROMANA</h3>
+          <p>
+            Vinagreta al parmesano añejo.
+          </p>
+          <div class="precio">
+            <p>$12</p>
+          </div>
+          <button class="agregarPlato" data-id="2">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/causa.jpeg" alt="">
+        <div class="info">
+          <h3>CAUSA DEL MAR</h3>
+          <p>
+            Con Cangrejo, Trucha y Caviar de Trucha
+          </p>
+          <br>
+          <div class="precio">
+            <p>$30</p>
+          </div>
+          <button class="agregarPlato" data-id="3">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/tiradito1.jpg" alt="">
+        <div class="info">
+          <h3>TIRADITO EN NAVAJAS</h3>
+          <p>
+            En leche de tigre de Alcachofas.
+          </p>
+          <br>
+          <div class="precio">
+            <p>$30</p>
+          </div>
+          <button class="agregarPlato" data-id="4">Agregar</button>
+        </div>
+      </div>
+
+
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/tiradito2.jpeg" alt="">
+        <div class="info">
+          <h3>TIRADITO DE LENGUADO</h3>
+          <p>
+            Con leche de tigre de vegetales y Rocoto.
+          </p>
+          <br>
+          <div class="precio">
+            <p>$18</p>
+          </div>
+          <button class="agregarPlato" data-id="5">Agregar</button>
+
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/pulpo.jpeg" alt="">
+        <div class="info">
+          <h3>PULPO AL OLIVO</h3>
+          <p>Crema de aceitunas de botija, Aceituna verde, pesto
+            y Alcaparras.
+          </p>
+          <div class="precio">
+            <p>$20</p>
+          </div>
+          <button class="agregarPlato" data-id="6">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/clasico.jpeg" alt="">
+        <div class="info">
+          <h3>CEVICHE CLASICO</h3>
+          <p>De Mero o Lenguado</p>
+          <br>
+          <br>
+          <br>
+          <div class="precio">
+            <p>$20</p>
+          </div>
+          <button class="agregarPlato" data-id="7">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/pulpoBrasa.jpeg" alt="">
+        <div class="info">
+          <h3>PULPO A LA BRASA DE OTOÑO</h3>
+          <p>Crema ahumada y
+            encurtido de ollucos.
+          </p>
+          <div class="precio">
+            <p>$15</p>
+          </div>
+          <button class="agregarPlato" data-id="8">Agregar</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>PLATOS DE FONDO</h2>
+    </div>
+    <div class="contenedor-items" id="listaPlatosFondo">
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/ravioles1.jpeg" alt="">
+        <div class="info">
+          <h3>RAVIOLES DE CHOCLO</h3>
+          <p>Crema trufada de limón y parmesano</p>
+          <br>
+          <div class="precio">
+            <p>$10</p>
+          </div>
+          <button class="agregarPlato" data-id="9">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/curry.jpg" alt="">
+        <div class="info">
+          <h3>TUBÉRCULOS ANDINOS Y CHIRIMOYA</h3>
+          <p>
+            Estofados en curry de Ajíes.
+          </p>
+          <div class="precio">
+            <p>$18</p>
+          </div>
+          <button class="agregarPlato" data-id="10">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/Tortellini.jpeg" alt="">
+        <div class="info">
+          <h3>TORTELLINIS DE MASHUAS</h3>
+          <p>Velouté de Ocas y hojas</p>
+          <br>
+          <div class="precio">
+            <p>$30</p>
+          </div>
+          <button class="agregarPlato" data-id="11">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/fideos1.jpeg" alt="">
+        <div class="info">
+          <h3>CROQUETAS DE LA CASA</h3>
+          <p>Fideos de arroz con to-fu</p>
+          <br>
+          <br>
+          <div class="precio">
+            <p>$18</p>
+          </div>
+          <button class="agregarPlato" data-id="12">Agregar</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>PLATOS DEL MAR</h2>
+    </div>
+    <div class="contenedor-items" id="listaPlatosMar">
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/lomo.webp" alt="">
+        <div class="info">
+          <h3>LOMO DE CABRILLA</h3>
+          <p>Caldo de frijol castilla y hongos</p>
+          <br>
+          <div class="precio">
+            <p>$25</p>
+          </div>
+          <button class="agregarPlato" data-id="13">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/trucha.jpeg" alt="">
+        <div class="info">
+          <h3>TRUCHA ROSADA</h3>
+          <p>
+            Estofados en curry de Ajíes.
+          </p>
+          <br>
+          <div class="precio">
+            <p>$24</p>
+          </div>
+          <button class="agregarPlato" data-id="14">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/udon4.jpeg" alt="">
+        <div class="info">
+          <h3>UDON DE ERIZOS</h3>
+          <p>Es una carbonara nikkei</p>
+          <p></p>
+          <br>
+          <br>
+          <div class="precio">
+            <p>$20</p>
+          </div>
+          <button class="agregarPlato" data-id="15">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/ragu.jpg" alt="">
+        <div class="info">
+          <h3>RAGU DE LANGOSTINOS</h3>
+          <p>Salsade sus coral</p>
+          <br>
+          <br>
+          <div class="precio">
+            <p>$28</p>
+          </div>
+          <button class="agregarPlato" data-id="16">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/mero.jpg" alt="">
+        <div class="info">
+          <h3>MERO MOURIQUE</h3>
+          <p>Su pachamanca, su Humita y espuma de Uchucuta.
+          </p>
+          <br>
+          <div class="precio">
+            <p>$17</p>
+          </div>
+          <button class="agregarPlato" data-id="17">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/pescado.jpg" alt="">
+        <div class="info">
+          <h3>FIDEOS EN SU TINTA</h3>
+          <p>
+            Con pescado y mariscode temporada.
+          </p>
+          <br>
+          <br>
+          <div class="precio">
+            <p>$18</p>
+          </div>
+          <button class="agregarPlato" data-id="18">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/calamares.jpg" alt="">
+        <div class="info">
+          <h3>RABAS DE CALAMAR</h3>
+          <p>
+            Seleccionando las mejores partes del calamar.
+          </p>
+          <div class="precio">
+            <p>$16</p>
+          </div>
+          <button class="agregarPlato" data-id="19">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/lomito.jpeg" alt="">
+        <div class="info">
+          <h3>LOMITO DE ATUN</h3>
+          <p>
+            Salsa la Pimienta molle, pastel de papa crudites.
+          </p>
+          <br>
+          <br>
+          <div class="precio">
+            <p>$21</p>
+          </div>
+          <button class="agregarPlato" data-id="20">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/arroz.jpg" alt="">
+        <div class="info">
+          <h3>ARROZ CON CONCHAS Y LANGOSTINOS</h3>
+          <p>
+            Cocido en punto meloso, alioli de sus corales
+          </p>
+          <div class="precio">
+            <p>$22</p>
+          </div>
+          <button class="agregarPlato" data-id="21">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/almeja2.jpg" alt="">
+        <div class="info">
+          <h3>ALMEJA AL VAPOR</h3>
+          <p>
+            Con preparaciones de almejas cocinadas al vapor.
+          </p>
+          <div class="precio">
+            <p>$23</p>
+          </div>
+          <button class="agregarPlato" data-id="22">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/pes.jpeg" alt="">
+        <div class="info">
+          <h3>PEZ DIABLOENTERO</h3>
+          <p>
+            Salsanikkei criolla, chaufacinco sabores.
+          </p>
+          <br>
+          <div class="precio">
+            <p>$25</p>
+          </div>
+          <button class="agregarPlato" data-id="23">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/collarin2.jpg" alt="">
+        <div class="info">
+          <h3>COLLARIN O PANZA DE PESCA DEL DIA</h3>
+          <p>
+            Bañada de sus jugos a la norteña
+          </p>
+          <div class="precio">
+            <p>$22</p>
+          </div>
+          <button class="agregarPlato" data-id="24">Agregar</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>BEBIDAS</h2>
+    </div>
+    <div class="contenedor-items" id="listaPlatosBebidas">
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/carda.jpg" alt="">
+        <div class="info">
+          <h3>CARDA MUÑA</h3>
+          <p>Tanqueray, muña, cardamomo, lima, limón.</p>
+          <br>
+          <div class="precio">
+            <p>$5</p>
+          </div>
+          <button class="agregarPlato" data-id="25">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/martini.jpeg" alt="">
+        <div class="info">
+          <h3>MARTINI ELEGANTE</h3>
+          <p>
+            Martini dry, Martini bianco,
+            piña golden.
+          </p>
+          <br>
+          <div class="precio">
+            <p>$10</p>
+          </div>
+          <button class="agregarPlato" data-id="26">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/sandia.jpg" alt="">
+        <div class="info">
+          <h3>PERFECTA SANDIA</h3>
+          <p>
+            14 Inkas, Perfecto Amor, Aperol, sandía, limón.
+          </p>
+          <br>
+          <div class="precio">
+            <p>$12</p>
+          </div>
+          <button class="agregarPlato" data-id="27">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/valle.jpeg" alt="">
+        <div class="info">
+          <h3>VALLE DE SIERVO</h3>
+          <p>Glenfiddich 12, Cointreau, Grand Marnier</p>
+          <br>
+          <div class="precio">
+            <p>$10</p>
+          </div>
+          <button class="agregarPlato" data-id="28">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/valle1.jpeg" alt="">
+        <div class="info">
+          <h3>VALLE DE MAR</h3>
+          <p>Glenfiddich 12, Cointreau, Grand Marnier</p>
+          <br>
+          <div class="precio">
+            <p>$10</p>
+          </div>
+          <button class="agregarPlato" data-id="29">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/hada.jpeg" alt="">
+        <div class="info">
+          <h3>HADA COLADA</h3>
+          <p>Flor de caña 12, La Fée Absinthe, piña golden</p>
+          <div class="precio">
+            <p>$13</p>
+          </div>
+          <button class="agregarPlato" data-id="30">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/pisco.jpeg" alt="">
+        <div class="info">
+          <h3>PISCO PUNCH</h3>
+          <p>4 Fundos italia, piña especiada, lima, limón</p>
+          <div class="precio">
+            <p>$12</p>
+          </div>
+          <button class="agregarPlato" data-id="31">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/sombra.jpeg" alt="">
+        <div class="info">
+          <h3>SOL Y SOMBRA</h3>
+          <p>Cuatro Gallos quebranta, licor de guinda</p>
+          <div class="precio">
+            <p>$13</p>
+          </div>
+          <button class="agregarPlato" data-id="32">Agregar</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>POSTRES</h2>
+    </div>
+    <div class="contenedor-items" id="listaPlatosPostres">
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/tartaQueso.jpeg" alt="">
+        <div class="info">
+          <h3>TARTA DE QUESO</h3>
+          <p>
+            Hecha a base de quesosandinos.
+          </p>
+          <div class="precio">
+            <p>$8</p>
+          </div>
+          <button class="agregarPlato" data-id="33">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/flan.jpeg" alt="">
+        <div class="info">
+          <h3>FLAN QUEMADO</h3>
+          <p>
+            Flan quemado, ajonjolí, aguaymantos
+            y café.
+          </p>
+          <div class="precio">
+            <p>$9</p>
+          </div>
+          <button class="agregarPlato" data-id="34">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/tiramisu.jpeg" alt="">
+        <div class="info">
+          <h3>TIRAMISU A LA LUCUMA</h3>
+          <p>
+            Lúcuma, mascarpone,
+            espresso, cacao.
+          </p>
+          <div class="precio">
+            <p>$11</p>
+          </div>
+          <button class="agregarPlato" data-id="35">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/tartaChoco.jpeg" alt="">
+        <div class="info">
+          <h3>TARTA DE CHOCOLATE</h3>
+          <p>
+            Con corazón chorreadode praliné
+          </p>
+          <div class="precio">
+            <p>$13</p>
+          </div>
+          <button class="agregarPlato" data-id="36">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/chirimoya.jpg" alt="">
+        <div class="info">
+          <h3>CHIRIMOYA VERDE</h3>
+          <p>
+            Con corazón chorreadode praliné
+          </p>
+          <div class="precio">
+            <p>$11</p>
+          </div>
+          <button class="agregarPlato" data-id="37">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/choclo.jpeg" alt="">
+        <div class="info">
+          <h3>EL CHOCLO</h3>
+          <p>Choclo, manzanas con paico y anís.
+          </p>
+          <div class="precio">
+            <p>$15</p>
+          </div>
+          <button class="agregarPlato" data-id="38">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/matcha.jpeg" alt="">
+        <div class="info">
+          <h3>MATCHA Y CARDOMOMO</h3>
+          <p>Ajonjolí, chesscakede té verde</p>
+          <div class="precio">
+            <p>$13</p>
+          </div>
+          <button class="agregarPlato" data-id="39">Agregar</button>
+        </div>
+      </div>
+      <div class="items">
+        <img src="IMAGENES.PEDIDOS/bomba.jpeg" alt="">
+        <div class="info">
+          <h3>SANTA BOMBA</h3>
+          <p>Helado de turrón,aguaymanto</p>
+          <div class="precio">
+            <p>$12</p>
+          </div>
+             <button class="agregarPlato" data-id="40">Agregar</button>
+         </div>
+      </div>
+
+    </div>
+
+
+
+
+    <footer>
+      <div class="footer">
+        <br><br><br><br>©️ Copyright 2024 FLAME | Desarrollado por Studying.UTP.pe
+      </div>
+    </footer>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("abajo", window.scrollY > 0)
+      })
+    </script>
+    <script src="pedidos.js"></script>
+</body>
+
+</html>

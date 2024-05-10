@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reservas.css">
+    <title>Reservas</title>
+</head>
+<body class="body">
+    
+    <header>
+        <a href="dominio.html" class="logo">FLAME</a>
+        <nav class="botonsiño">
+        <div id="toggle-menu" class="toggle-menu"> 
+            <label for="check" ><i class="fa-light fa-bars"></i>
+                <img src="iamgenes/barras.png" alt="">
+            </label>
+            
+        </div>
+        <input type="checkbox" class="barras" id="check"/>
+            
+            <ul id="menu" class="menu">
+                <li><a href="inicio.html" >Inicio</a></li>
+                <li><a href="carta.html" >Carta</a></li>
+                <li><a href="evento.html">Eventos</a></li>
+                <li><a href="contacto.html" >Contacto</a></li>
+                <li><a href="Reservas.html" >Reservas</a></li>
+                <li><a href="pedidos.html" >Pedidos</a></li>
+            </ul>
+    </header>
+
+    <section id="hero">
+        <div class="hero container">
+          <div>
+            <h1>Hola, <span></span></h1>
+            <h1>Nosotros somos<span></span></h1>
+            <h1>FLAME <span></span></h1>
+            <a href="registro.php" type="button" class="cta">Ingresar</a>
+          </div>
+        </div>
+      </section>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY > 0)
+        })
+    </script>
+    
+</body>
+</html>

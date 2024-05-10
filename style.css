@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Lora', serif;
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+header.abajo{
+    background: #fff;
+    padding: 15px 20px;
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+    font-weight: 800;
+}
+nav{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    font-family: Helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+header.abajo .logo{
+    color: black;
+}
+header.abajo ul li a{
+    color: black;
+}
+.zona1{
+    position:relative;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    place-items: center;
+    background: url('iamgenes/pedidos.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.zona1::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+/**/
+
+h1{
+    color: antiquewhite;
+    position: relative;
+    font-size: 50px;
+}
+
+.contenedor{
+    background-color: #f5f3f3;
+    display: flexbox;
+}
+
+/*carrito*/
+.contenedor nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.car2 {
+    display: none;
+}
+
+.contenedor nav button {
+    display: none;
+}
+
+.car2 li {
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.contenedor nav i:hover > .Car1 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background-color: #ffff;
+}
+
+.contenedor nav i:hover .car2{
+    font-size: 1.0rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    border-bottom: solid thin #e1e1e1;
+}
+
+.contenedor nav i:hover .Car1 > button {
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    margin: 10px;
+    background-color: transparent;
+    border: solid thin #e1e1e1;
+    color: #494848;
+    cursor: pointer;
+}
+
+.contenedor nav i:hover .Car1 > button:hover {
+    border: solid thin #494848;
+    transition: all .4s;
+}
+
+.contenedor nav i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+/**/
+
+h1{
+    position: relative;
+    font-weight: bold;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+    padding: 20px;
+}
+
+.contenedor-items{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 50px;
+    padding: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.items{
+    background-color: lemonchiffon;
+    border: solid thin #e1e1e1;
+    width: 280px;
+    height: 480px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+.items img{
+    width: 100%;
+    height: 170px;
+}
+
+.info{
+    padding: 15px;
+}
+
+.info h3{
+    font-size: 1,6rem;
+}
+
+.info p{
+    font-size: 1.5rem;
+    
+}
+
+.precio{
+    display: flex;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.precio p{
+    font-size: 1.8rem;
+}
+
+.info h3,
+.info p {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.info button {
+    justify-content: end;
+    padding: 1rem;
+    width: 100%;
+    background-color: coral;
+    border: none;
+    outline: none;
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;   
+    margin-top: 20px;
+}
+
+.info button:hover {
+    background-color:#aa57e0;
+    transition: all .3s;
+}
+
+
+.footer{
+    background-color:#604d45;;
+    color: white;
+   padding: 30px;
+   text-align: center;
+   font-style: '300';
+}
+
+
+/**/
+
+.barras{
+    font-size: 30px;
+    float: right;
+    text-decoration: none;
+    line-height: 30px;
+    margin-right: 15;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+.barras.abajo{
+    font-size: 30px;
+    float: right;
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+
+.toggle-menu{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 40px;
+    z-index: 1;
+    display: none;
+    transition: 1.5s;
+}
+
+img{
+    max-width: 100%;
+}
+
+@media all and (max-width:800px){
+    
+    header{
+        position: fixed;
+        flex-direction: row;
+        text-align:center;
+        width: 100%;
+    }
+    .logo{
+        margin-right: 80px;
+    }
+    header ul{
+        flex-direction: column;
+        float: right;
+    }
+    .zona1{
+        flex-direction: column;
+    }
+    .zona2{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .mensaje{
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+    .zona3{
+        flex-direction: column;
+        display: block;
+        width: 100%;
+    }
+    section ul{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .subtitle{
+        flex-direction: column;
+        padding-bottom: 30px;
+        font-weight: 700;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    header.abajo .toggle-menu{
+        filter: invert(0);
+        transition: 1.5s;
+    }
+    .menu{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f6c5b7;
+        top: 70px;
+        left: -110%;
+        transition: all 0.5s;
+        text-align: center;
+        color: #000000;
+        
+    }
+    header ul li{
+        display: block;
+        margin: 32px 0;
+        line-height: 30px;
+    }
+    header ul li a{
+        color: #000000;
+    }
+    nav{
+        flex-direction: column;
+        float: right;
+    }
+    #check{
+        flex-direction: row;
+        background-color: #f6c5b7;
+        display: none;
+    }
+    .barras:checked + .menu{
+        left: 0;
+    }
+    .toggle-menu{
+        
+        display: block;
+    }
+    i{
+        display: none;
+    }
+
+    
+}
+
+@media all and(max-width:750px){
+
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .items {
+        flex-wrap: wrap;
+    }
+
+}
+
+/*Carrito elementos*/
+/*Carrito elementos*/
+.lista_de_Platos div{
+    display: none;
+    text-align:center;
+    padding: 10px 0 0 0;
+    border-top: solid thin black;
+    font-size: 20px;
+}
+
+.contenedor nav i:hover .Car1 > .lista_de_Platos div {
+    display: flex;
+}
+
+.lista_de_Platos img{
+    width: 100px;
+    height: 80px;
+    padding-right: 10px;
+}
+
+.lista_de_Platos p{
+    font-size: 13px;
+    width: 200px;
+}
+
+
+.lista_de_Platos p span{
+    background-color: coral;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: white;
+}
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dominio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Carta</title>
+</head>
+
+<body>
+    <header>
+        <a href="dominio.html" class="logo">FLAME</a>
+        <nav class="botonsiño">
+            <div id="toggle-menu" class="toggle-menu">
+                <label for="check"><i class="fa-light fa-bars"></i>
+                    <img src="iamgenes/barras.png" alt="">
+                </label>
+
+            </div>
+            <input type="checkbox" class="barras" id="check" />
+            
+            <ul id="menu" class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="evento.html">Eventos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Reservas.html">Reservas</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                
+            </ul>
+        
+    </header>
+    <section class="zona1">
+        <h1>FLAME</h1>
+    </section>
+    <section class="zona2">
+        <p class="mensaje"> "En un mundo donde el calor es sinónimo de vida, donde el fuego crea la alquimia
+            perfecta entre ingredientes frescos y sazones únicas, nace un nuevo epicentro gastronómico: 
+            "FLAME" Somos más que un restaurante, somos un tributo a la intensidad de los sabores y el arte de la cocina PERUANA."</p>
+    </section>
+
+    <section class="zona3">
+        <div class="contenedor1">
+            <P1 class="subtitulo">Nuestra Misión</P1>
+            <P class="texto">
+                Nos especializamos en ofrecer a nuestros clientes una experiencia culinaria 
+                auténtica y deliciosa, resaltando los sabores tradicionales y la cultura gastronómica del Perú. Nos comprometemos a utilizar ingredientes frescos y de alta calidad en cada plato, proporcionando un servicio excepcional que refleja nuestra pasión 
+                por la cocina peruana y nuestra dedicación a la satisfacción del cliente.
+            </P>
+        </div>
+        <img class="img3"  src="iamgenes/img2.jpg" alt="">
+    </section>
+    <section class="zona4">
+        <img src="iamgenes/chef.jpg" alt="" class="imagennormal">
+        <div class="contenedor2">
+            <P1 class="subtitulo">Nuestra Visión</P1>
+            <P class="texto">
+                Nos proyectamos como líderes reconocidos a nivel nacional e internacional
+             en la difusión y promoción de la gastronomía peruana. Buscamos ser 
+             un referente para los aficionados a la comida peruana que valoran autenticidad
+              y calidad. Nuestra aspiración es liderar la innovación culinaria, manteniendo el respeto por las recetas tradicionales y los sabores distintivos que hacen de la comida 
+              peruana un tesoro culinario globalmente apreciado.
+            </P>
+             
+        </div>
+        <img src="iamgenes/imagen4.webp" alt="" class="imageninvert">
+    </section>
+    <section class="zona5">
+        <p class="mensaje2"> LA COCINA</p>
+        <P class="mensaje4"> "Nuestro fuego nunca se apagó. Hoy abrimos nuevamente nuestras puertas con nuevos y amplios
+            espacios, y una carta que viaja en el tiempo hacia un mismo destino: el amor por la cocina
+            peruana."</p>
+    </section>
+
+
+
+    <footer>
+        <div class="footer">
+            <br>Horario de atención<br><br>En salón:<br>De martes a sábado<br>- Almuerzo - 01:00 p. m. a 3:30 p. m.<br>-
+            Cena - 7:00 p. m. a 11:00 p. m.<br>Domingo de 12:00 m. a 4:00 p. m.<br><br>Envío a domicilio y recojo en
+            tienda:<br>De martes a sábado<br>- Almuerzo - 01:00 p. m. a 3:30 p. m.<br>- Cena - 7:00 p. m. a 11:00 p.
+            m.<br>Domingo de 12:00 m. a 4:00 p. m.<br><br><br><br>©️ Copyright 2024 FLAME | Desarrollado por
+            Studying.UTP.pe
+        </div>
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY > 0)
+        })
+    </script>
+    
+</body>
+
+</html>
